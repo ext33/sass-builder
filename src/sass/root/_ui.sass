@@ -1,0 +1,103 @@
+@import 'vars'
+
+// reset default styles
+*
+    padding: 0
+    margin: 0
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    font-family: $default-font
+    box-sizing: border-box
+    &:before, &:after
+        -webkit-box-sizing: border-box
+        -moz-box-sizing: border-box
+        box-sizing: border-box
+
+*::-webkit-input-placeholder
+    color: #666
+    opacity: 1
+
+*:-moz-placeholder
+    color: #666
+    opacity: 1
+
+*::-moz-placeholder
+    color: #666
+    opacity: 1
+
+*:-ms-input-placeholder
+    color: #666
+    opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+    color: #666
+body input:required:valid,
+body textarea:required:valid
+    color: #666
+
+html, body
+    height: 100%
+    box-sizing: border-box
+
+h1
+    font-size: 24px
+    letter-spacing: -0.02em
+
+h2
+    line-height: 22px
+    font-size: 18px
+
+main
+    position: relative
+    z-index: -1
+
+input
+    border: none
+    background-image: none
+    background-color: transparent
+    -webkit-box-shadow: none
+    -moz-box-shadow: none
+    box-shadow: none
+    &:focus
+        outline: none
+
+button
+    padding: 0
+    border: none
+    font: inherit
+    color: inherit
+    background-color: transparent
+    outline: none
+    &:hover
+        border: none
+        outline: none
+    &:active
+        border: none
+        outline: none
+    &:focus
+        outline: none
+        border: none
+
+a
+    text-decoration: none
+    color: $black
+    transition: .2s ease-in-out
+    &:hover
+        color: $red
+
+p
+    line-height: 17px
+
+hr
+    border-top: 0px
+
+
+// main styles
+.flex
+    display: flex
+
+.nav
+    justify-content: center
+    align-items: center
+    flex-direction: column
